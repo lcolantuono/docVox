@@ -1,3 +1,4 @@
+Desarrollada en Yii Framework
 docVox
 ======
 Aplicación con base de datos de audios que contiene informes médicos para su eventual transcripción, mediante reproducción de los audios controlada por pedales. 
