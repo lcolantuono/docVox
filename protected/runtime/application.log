@@ -1,0 +1,1167 @@
+2014/03/13 11:40:58 [error] [exception.CException] exception 'CException' with message 'Propiedad "CActiveForm"."onsubmit" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('onsubmit', 'return confirm(...')
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ArchivoController), 'CActiveForm', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\AppServ\www\docVoxYii\protected\views\archivo\_form.php(55): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\docVoxYii\protected\views\archivo\update.php(23): CController->renderPartial('_form', Array)
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#10 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#11 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#12 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(106): CController->render('update', Array)
+#13 [internal function]: ArchivoController->actionUpdate('78')
+#14 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArchivoController), Array)
+#15 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArchivoController), Object(ReflectionMethod), Array)
+#16 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#25 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('archivo/update')
+#26 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/docVoxYii/index.php?r=archivo/update&id=78
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=archivo/admin
+---
+2014/03/13 11:40:58 [error] [exception.CException] exception 'CException' with message 'Propiedad "CActiveForm"."onsubmit" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('onsubmit', 'return confirm(...')
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ArchivoController), 'CActiveForm', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\AppServ\www\docVoxYii\protected\views\archivo\_form.php(55): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\docVoxYii\protected\views\archivo\update.php(23): CController->renderPartial('_form', Array)
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#10 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#11 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#12 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(106): CController->render('update', Array)
+#13 [internal function]: ArchivoController->actionUpdate('78')
+#14 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArchivoController), Array)
+#15 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArchivoController), Object(ReflectionMethod), Array)
+#16 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#25 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('archivo/update')
+#26 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/docVoxYii/index.php?r=archivo/update&id=78
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=archivo/admin
+---
+2014/03/13 12:08:57 [error] [exception.CException] exception 'CException' with message 'Propiedad "CActiveForm"."onsubmit" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('onsubmit', 'return confirm(...')
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ArchivoController), 'CActiveForm', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\AppServ\www\docVoxYii\protected\views\archivo\_form.php(55): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\docVoxYii\protected\views\archivo\update.php(23): CController->renderPartial('_form', Array)
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#10 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#11 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#12 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(106): CController->render('update', Array)
+#13 [internal function]: ArchivoController->actionUpdate('78')
+#14 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArchivoController), Array)
+#15 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArchivoController), Object(ReflectionMethod), Array)
+#16 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#25 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('archivo/update')
+#26 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/docVoxYii/index.php?r=archivo/update&id=78
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=archivo/admin
+---
+2014/03/13 12:08:58 [error] [exception.CException] exception 'CException' with message 'Propiedad "CActiveForm"."onsubmit" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('onsubmit', 'return confirm(...')
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ArchivoController), 'CActiveForm', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\AppServ\www\docVoxYii\protected\views\archivo\_form.php(55): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\docVoxYii\protected\views\archivo\update.php(23): CController->renderPartial('_form', Array)
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#10 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#11 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#12 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(106): CController->render('update', Array)
+#13 [internal function]: ArchivoController->actionUpdate('78')
+#14 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArchivoController), Array)
+#15 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArchivoController), Object(ReflectionMethod), Array)
+#16 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#25 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('archivo/update')
+#26 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/docVoxYii/index.php?r=archivo/update&id=78
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=archivo/admin
+---
+2014/03/19 10:22:10 [error] [exception.CException] exception 'CException' with message 'AudioController contiene etiquetas de widget en la vista "C:\AppServ\www\docVoxYii\protected\views\audio\view.php" anidados incorrectamente. TbModal widget no contiene la llamada a endWidget().' in C:\AppServ\www\yii\framework\web\CBaseController.php:101
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#1 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#2 C:\AppServ\www\docVoxYii\protected\controllers\AudioController.php(59): CController->render('view', Array)
+#3 [internal function]: AudioController->actionView('29')
+#4 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AudioController), Array)
+#5 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AudioController), Object(ReflectionMethod), Array)
+#6 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('audio/view')
+#16 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/docVoxYii/index.php?r=audio/view&id=29
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/create
+---
+2014/03/19 10:23:19 [error] [exception.CException] exception 'CException' with message 'AudioController tiene una llamada extra a endWidget() en su vista.' in C:\AppServ\www\yii\framework\web\CBaseController.php:210
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\audio\view.php(259): CBaseController->endWidget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#5 C:\AppServ\www\docVoxYii\protected\controllers\AudioController.php(59): CController->render('view', Array)
+#6 [internal function]: AudioController->actionView('30')
+#7 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AudioController), Array)
+#8 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AudioController), Object(ReflectionMethod), Array)
+#9 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('audio/view')
+#19 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/docVoxYii/index.php?r=audio/view&id=30
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/create
+---
+2014/03/19 10:23:50 [error] [exception.CException] exception 'CException' with message 'AudioController tiene una llamada extra a endWidget() en su vista.' in C:\AppServ\www\yii\framework\web\CBaseController.php:210
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\audio\view.php(250): CBaseController->endWidget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#5 C:\AppServ\www\docVoxYii\protected\controllers\AudioController.php(59): CController->render('view', Array)
+#6 [internal function]: AudioController->actionView('30')
+#7 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AudioController), Array)
+#8 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AudioController), Object(ReflectionMethod), Array)
+#9 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('audio/view')
+#19 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/docVoxYii/index.php?r=audio/view&id=30
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/create
+---
+2014/03/19 10:23:51 [error] [exception.CException] exception 'CException' with message 'AudioController tiene una llamada extra a endWidget() en su vista.' in C:\AppServ\www\yii\framework\web\CBaseController.php:210
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\audio\view.php(250): CBaseController->endWidget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#5 C:\AppServ\www\docVoxYii\protected\controllers\AudioController.php(59): CController->render('view', Array)
+#6 [internal function]: AudioController->actionView('30')
+#7 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AudioController), Array)
+#8 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AudioController), Object(ReflectionMethod), Array)
+#9 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('audio/view')
+#19 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/docVoxYii/index.php?r=audio/view&id=30
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/create
+---
+2014/03/19 10:27:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'No se encuentra autorizado para ingresar.' in C:\AppServ\www\docVoxYii\protected\views\site\pages\admin.php:81
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#2 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#3 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('pages/admin', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(140): CController->render('pages/admin')
+#5 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#7 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#8 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#9 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#10 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#11 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=admin
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/view&id=30
+---
+2014/03/19 10:27:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'No se encuentra autorizado para ingresar.' in C:\AppServ\www\docVoxYii\protected\views\site\pages\admin.php:81
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#2 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#3 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('pages/admin', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(140): CController->render('pages/admin')
+#5 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#7 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#8 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#9 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#10 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#11 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=admin
+---
+2014/03/19 11:09:44 [error] [exception.CException] exception 'CException' with message 'AudioController contiene etiquetas de widget en la vista "C:\AppServ\www\docVoxYii\protected\views\audio\view.php" anidados incorrectamente. TbButton widget no contiene la llamada a endWidget().' in C:\AppServ\www\yii\framework\web\CBaseController.php:101
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#1 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#2 C:\AppServ\www\docVoxYii\protected\controllers\AudioController.php(59): CController->render('view', Array)
+#3 [internal function]: AudioController->actionView('30')
+#4 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AudioController), Array)
+#5 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AudioController), Object(ReflectionMethod), Array)
+#6 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('audio/view')
+#16 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/docVoxYii/index.php?r=audio/view&id=30
+---
+2014/03/19 11:55:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'No se encuentra autorizado para ingresar.' in C:\AppServ\www\docVoxYii\protected\views\site\pages\admin.php:81
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#2 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#3 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('pages/admin', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(140): CController->render('pages/admin')
+#5 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#7 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#8 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#9 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#10 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#11 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=admin
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/view&id=30
+---
+2014/03/19 11:55:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'No se encuentra autorizado para ingresar.' in C:\AppServ\www\docVoxYii\protected\views\site\pages\admin.php:81
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#2 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#3 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('pages/admin', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(140): CController->render('pages/admin')
+#5 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#7 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#8 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#9 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#10 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#11 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=admin
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=admin
+---
+2014/03/19 12:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 12:08:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "grabar" solicitada.' in C:\AppServ\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(270): CController->missingAction('grabar')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('grabar')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/grabar')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/grabar
+---
+2014/03/19 12:08:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "grabar.html" solicitada.' in C:\AppServ\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(270): CController->missingAction('grabar.html')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('grabar.html')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/grabar.htm...')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/grabar.html
+---
+2014/03/19 12:08:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "grabar" solicitada.' in C:\AppServ\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(270): CController->missingAction('grabar')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('grabar')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/grabar')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/grabar
+---
+2014/03/19 12:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 12:11:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 12:12:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 12:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 12:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 12:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 12:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 12:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 12:12:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar.html" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar.html')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar.html
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 12:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar.html" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar.html')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar.html
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 12:14:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar.html
+---
+2014/03/19 12:16:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar.html
+---
+2014/03/19 12:29:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "grabar" no fue encontrada.' in C:\AppServ\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('grabar')
+#1 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=grabar
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=site/page&view=grabar
+---
+2014/03/19 13:28:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'No se encuentra autorizado para ingresar.' in C:\AppServ\www\docVoxYii\protected\views\site\pages\admin.php:81
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#2 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#3 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('pages/admin', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(140): CController->render('pages/admin')
+#5 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#7 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#8 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#9 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#10 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#11 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=admin
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/view&id=35
+---
+2014/03/19 13:28:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'No se encuentra autorizado para ingresar.' in C:\AppServ\www\docVoxYii\protected\views\site\pages\admin.php:81
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#2 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#3 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('pages/admin', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(140): CController->render('pages/admin')
+#5 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#7 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#8 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#9 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#10 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#11 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=admin
+HTTP_REFERER=http://localhost/docVoxYii/index.php
+---
+2014/03/19 13:42:20 [error] [exception.CException] exception 'CException' with message 'Propiedad "WebUser"."usuario" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\auth\CWebUser.php(140): CComponent->__get('usuario')
+#1 C:\AppServ\www\docVoxYii\protected\views\site\index.php(22): CWebUser->__get('usuario')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\AppServ\www\docVoxYii\protected\controllers\SiteController.php(39): CController->render('index')
+#7 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/index
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/admin
+---
+2014/03/19 13:42:53 [error] [exception.CException] exception 'CException' with message 'Propiedad "WebUser"."Usuario" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\auth\CWebUser.php(140): CComponent->__get('Usuario')
+#1 C:\AppServ\www\docVoxYii\protected\views\site\index.php(22): CWebUser->__get('Usuario')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\AppServ\www\docVoxYii\protected\controllers\SiteController.php(39): CController->render('index')
+#7 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/index
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/admin
+---
+2014/03/19 13:42:54 [error] [exception.CException] exception 'CException' with message 'Propiedad "WebUser"."Usuario" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\auth\CWebUser.php(140): CComponent->__get('Usuario')
+#1 C:\AppServ\www\docVoxYii\protected\views\site\index.php(22): CWebUser->__get('Usuario')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\AppServ\www\docVoxYii\protected\controllers\SiteController.php(39): CController->render('index')
+#7 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/index
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/admin
+---
+2014/03/19 13:43:05 [error] [exception.CException] exception 'CException' with message 'Propiedad "WebUser"."Nombre" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\auth\CWebUser.php(140): CComponent->__get('Nombre')
+#1 C:\AppServ\www\docVoxYii\protected\views\site\index.php(22): CWebUser->__get('Nombre')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\AppServ\www\docVoxYii\protected\controllers\SiteController.php(39): CController->render('index')
+#7 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/index
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/admin
+---
+2014/03/19 13:43:42 [error] [exception.CException] exception 'CException' with message 'Propiedad "WebUser"."Clave" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\auth\CWebUser.php(140): CComponent->__get('Clave')
+#1 C:\AppServ\www\docVoxYii\protected\views\site\index.php(22): CWebUser->__get('Clave')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\AppServ\www\docVoxYii\protected\controllers\SiteController.php(39): CController->render('index')
+#7 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/index
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/admin
+---
+2014/03/19 13:43:48 [error] [exception.CException] exception 'CException' with message 'Propiedad "WebUser"."Clave" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\auth\CWebUser.php(140): CComponent->__get('Clave')
+#1 C:\AppServ\www\docVoxYii\protected\views\site\index.php(22): CWebUser->__get('Clave')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\AppServ\www\docVoxYii\protected\controllers\SiteController.php(39): CController->render('index')
+#7 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/index
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/admin
+---
+2014/03/19 13:43:52 [error] [exception.CException] exception 'CException' with message 'Propiedad "WebUser"."pass" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\auth\CWebUser.php(140): CComponent->__get('pass')
+#1 C:\AppServ\www\docVoxYii\protected\views\site\index.php(22): CWebUser->__get('pass')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\AppServ\www\docVoxYii\protected\controllers\SiteController.php(39): CController->render('index')
+#7 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/index
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=audio/admin
+---
+2014/03/19 13:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La pagina solicitada no existe.' in C:\AppServ\www\docVoxYii\protected\controllers\AudioController.php:172
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\controllers\AudioController.php(58): AudioController->loadModel('30')
+#1 [internal function]: AudioController->actionView('30')
+#2 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AudioController), Array)
+#3 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AudioController), Object(ReflectionMethod), Array)
+#4 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('audio/view')
+#14 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/docVoxYii/index.php?r=audio/view&id=30
+---
+2014/03/20 13:26:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'No se encuentra autorizado para ingresar.' in C:\AppServ\www\docVoxYii\protected\views\site\pages\admin.php:81
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#2 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#3 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('pages/admin', NULL, true)
+#4 C:\AppServ\www\yii\framework\web\actions\CViewAction.php(140): CController->render('pages/admin')
+#5 C:\AppServ\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#6 C:\AppServ\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#7 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#8 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#9 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#10 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#11 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/docVoxYii/index.php?r=site/page&view=admin
+HTTP_REFERER=http://localhost/docVoxYii/index.php
+---
+2014/03/20 13:42:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La pagina soliocitada no existe.' in C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php:203
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(89): ArchivoController->loadModel('82')
+#1 [internal function]: ArchivoController->actionUpdate('82')
+#2 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArchivoController), Array)
+#3 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArchivoController), Object(ReflectionMethod), Array)
+#4 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('archivo/update')
+#14 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/docVoxYii/index.php?r=archivo/update&id=82
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=archivo/admin
+---
+2014/03/20 13:42:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La pagina soliocitada no existe.' in C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php:203
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(89): ArchivoController->loadModel('84')
+#1 [internal function]: ArchivoController->actionUpdate('84')
+#2 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArchivoController), Array)
+#3 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArchivoController), Object(ReflectionMethod), Array)
+#4 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('archivo/update')
+#14 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/docVoxYii/index.php?r=archivo/update&id=84
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=archivo/admin
+---
+2014/03/20 13:50:19 [error] [exception.CException] exception 'CException' with message 'Propiedad "TbButton"."onclick" no se encuentra definida.' in C:\AppServ\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('onclick', 'javascript:cerr...')
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ArchivoController), 'bootstrap.widge...', Array)
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\AppServ\www\docVoxYii\protected\views\archivo\update.php(17): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#8 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(106): CController->render('update', Array)
+#9 [internal function]: ArchivoController->actionUpdate('83')
+#10 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArchivoController), Array)
+#11 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArchivoController), Object(ReflectionMethod), Array)
+#12 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('archivo/update')
+#22 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\AppServ\www\docVoxYii\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/docVoxYii/index.php?r=archivo/update&id=83
+HTTP_REFERER=http://localhost/docVoxYii/index.php?r=archivo/admin
+---
+2014/03/25 11:12:07 [error] [php] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\docVoxYii\protected\extensions\phpmailer\class.phpmailer.php:586) (C:\AppServ\www\yii\framework\web\CHttpRequest.php:789)
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(1043): SiteController->redirect()
+#1 C:\AppServ\www\docVoxYii\protected\controllers\SiteController.php(97): SiteController->refresh()
+#2 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#3 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\AppServ\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\AppServ\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=site/contact
+in C:\AppServ\www\docVoxYii\protected\controllers\SiteController.php (97)
+in C:\AppServ\www\docVoxYii\index.php (13)
+2014/03/25 13:18:01 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php:97)
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php(122): ArchivoController->widget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): ArchivoController->renderInternal()
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): ArchivoController->renderFile()
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): ArchivoController->renderPartial()
+#5 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(169): ArchivoController->render()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ArchivoController->actionAdmin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): ArchivoController->runAction()
+#9 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\AppServ\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): ArchivoController->filterAccessControl()
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(265): ArchivoController->runActionWithFilters()
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): ArchivoController->run()
+#16 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=archivo/admin
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (97)
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (154)
+in C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php (122)
+2014/03/25 13:18:45 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php:97)
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php(122): ArchivoController->widget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): ArchivoController->renderInternal()
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): ArchivoController->renderFile()
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): ArchivoController->renderPartial()
+#5 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(169): ArchivoController->render()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ArchivoController->actionAdmin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): ArchivoController->runAction()
+#9 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\AppServ\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): ArchivoController->filterAccessControl()
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(265): ArchivoController->runActionWithFilters()
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): ArchivoController->run()
+#16 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=archivo/admin
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (97)
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (154)
+in C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php (122)
+2014/03/25 13:18:46 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php:97)
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php(122): ArchivoController->widget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): ArchivoController->renderInternal()
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): ArchivoController->renderFile()
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): ArchivoController->renderPartial()
+#5 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(169): ArchivoController->render()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ArchivoController->actionAdmin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): ArchivoController->runAction()
+#9 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\AppServ\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): ArchivoController->filterAccessControl()
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(265): ArchivoController->runActionWithFilters()
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): ArchivoController->run()
+#16 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=archivo/admin
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (97)
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (154)
+in C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php (122)
+2014/03/25 13:19:01 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php:97)
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php(122): ArchivoController->widget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): ArchivoController->renderInternal()
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): ArchivoController->renderFile()
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): ArchivoController->renderPartial()
+#5 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(169): ArchivoController->render()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ArchivoController->actionAdmin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): ArchivoController->runAction()
+#9 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\AppServ\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): ArchivoController->filterAccessControl()
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(265): ArchivoController->runActionWithFilters()
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): ArchivoController->run()
+#16 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=archivo/admin
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (97)
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (154)
+in C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php (122)
+2014/03/25 13:19:02 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php:97)
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php(122): ArchivoController->widget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): ArchivoController->renderInternal()
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): ArchivoController->renderFile()
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): ArchivoController->renderPartial()
+#5 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(169): ArchivoController->render()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ArchivoController->actionAdmin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): ArchivoController->runAction()
+#9 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\AppServ\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): ArchivoController->filterAccessControl()
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(265): ArchivoController->runActionWithFilters()
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): ArchivoController->run()
+#16 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=archivo/admin
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (97)
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (154)
+in C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php (122)
+2014/03/25 13:19:03 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php:97)
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php(122): ArchivoController->widget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): ArchivoController->renderInternal()
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): ArchivoController->renderFile()
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): ArchivoController->renderPartial()
+#5 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(169): ArchivoController->render()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ArchivoController->actionAdmin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): ArchivoController->runAction()
+#9 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\AppServ\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): ArchivoController->filterAccessControl()
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(265): ArchivoController->runActionWithFilters()
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): ArchivoController->run()
+#16 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=archivo/admin
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (97)
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (154)
+in C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php (122)
+2014/03/25 13:19:04 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php:97)
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php(122): ArchivoController->widget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): ArchivoController->renderInternal()
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): ArchivoController->renderFile()
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): ArchivoController->renderPartial()
+#5 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(169): ArchivoController->render()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ArchivoController->actionAdmin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): ArchivoController->runAction()
+#9 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\AppServ\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): ArchivoController->filterAccessControl()
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(265): ArchivoController->runActionWithFilters()
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): ArchivoController->run()
+#16 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=archivo/admin
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (97)
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (154)
+in C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php (122)
+2014/03/25 13:19:42 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php:97)
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php(122): ArchivoController->widget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): ArchivoController->renderInternal()
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): ArchivoController->renderFile()
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): ArchivoController->renderPartial()
+#5 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(169): ArchivoController->render()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ArchivoController->actionAdmin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): ArchivoController->runAction()
+#9 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\AppServ\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): ArchivoController->filterAccessControl()
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(265): ArchivoController->runActionWithFilters()
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): ArchivoController->run()
+#16 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=archivo/admin
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (97)
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (154)
+in C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php (122)
+2014/03/25 13:19:54 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php:97)
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php(122): ArchivoController->widget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): ArchivoController->renderInternal()
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): ArchivoController->renderFile()
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): ArchivoController->renderPartial()
+#5 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(169): ArchivoController->render()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ArchivoController->actionAdmin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): ArchivoController->runAction()
+#9 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\AppServ\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): ArchivoController->filterAccessControl()
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(265): ArchivoController->runActionWithFilters()
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): ArchivoController->run()
+#16 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=archivo/admin
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (97)
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (154)
+in C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php (122)
+2014/03/25 13:19:55 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php:97)
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php(122): ArchivoController->widget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): ArchivoController->renderInternal()
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): ArchivoController->renderFile()
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): ArchivoController->renderPartial()
+#5 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(169): ArchivoController->render()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ArchivoController->actionAdmin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): ArchivoController->runAction()
+#9 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\AppServ\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): ArchivoController->filterAccessControl()
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(265): ArchivoController->runActionWithFilters()
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): ArchivoController->run()
+#16 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=archivo/admin
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (97)
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (154)
+in C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php (122)
+2014/03/25 13:19:55 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php:97)
+Stack trace:
+#0 C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php(122): ArchivoController->widget()
+#1 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(95): ArchivoController->renderInternal()
+#3 C:\AppServ\www\yii\framework\web\CController.php(869): ArchivoController->renderFile()
+#4 C:\AppServ\www\yii\framework\web\CController.php(782): ArchivoController->renderPartial()
+#5 C:\AppServ\www\docVoxYii\protected\controllers\ArchivoController.php(169): ArchivoController->render()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ArchivoController->actionAdmin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): ArchivoController->runAction()
+#9 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\AppServ\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): ArchivoController->filterAccessControl()
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(265): ArchivoController->runActionWithFilters()
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): ArchivoController->run()
+#16 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\AppServ\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\AppServ\www\docVoxYii\index.php(13): CWebApplication->run()
+REQUEST_URI=/docVoxYii/index.php?r=archivo/admin
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (97)
+in C:\AppServ\www\docVoxYii\protected\extensions\tablesorter\Sorter.php (154)
+in C:\AppServ\www\docVoxYii\protected\views\archivo\admin.php (122)
