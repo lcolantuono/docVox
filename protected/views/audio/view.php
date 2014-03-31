@@ -31,6 +31,7 @@ $this->menu=array(
 		'descripcion',
 		'fecha',
 		'idservicios',
+		'ubicacion',
 		'idmedico',
 		'aux',
 	),

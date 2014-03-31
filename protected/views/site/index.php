@@ -78,7 +78,9 @@ $sinTranscribir = Yii::app()->db->createCommand()
 							     ->queryAll();
 $cantSinTra = count($sinTranscribir);
 	#Yii::app()->user->setFlash('warning', '<div align="center">Cantidad de informes sin trancribir:<strong> '.$cantSinTra.'</strong></div>');
-	Yii::app()->user->setFlash('info', '<div style="position: absolute;">Cantidad de informes sin trancribir:<strong> '.$cantSinTra.'</strong></div><div align="right">'.date("d-m-Y H:i:s").'</div>');
+	Yii::app()->user->setFlash('info', '<div style="position: absolute;">Cantidad de informes sin trancribir:<strong> '.$cantSinTra.'</strong></div>
+											<div align="right"><div id="fecha" style="display: inline">'.date("j-n-Y").' &#124; </div>
+															   <div id="hora" style="display: inline"></div></div>');
 ?>
 
 <?php $this->widget('bootstrap.widgets.TbAlert', array(
@@ -97,3 +99,20 @@ $cantSinTra = count($sinTranscribir);
 		$('#reloj').load('index.php?r=site/page&view=reloj'); 
 	},200);
 </script>-->
+
+<script type="text/javascript">
+window.onload=hora;
+fecha = new Date('<?php echo date("d M Y G:i:s"); ?>');
+function hora(){
+	var hora=fecha.getHours();
+	var minutos=fecha.getMinutes();	
+	var segundos=fecha.getSeconds();
+	if(hora<10){ hora='0'+hora;}
+	if(minutos<10){minutos='0'+minutos; }
+	if(segundos<10){ segundos='0'+segundos; }
+	fech=hora+":"+minutos+":"+segundos;
+	document.getElementById('hora').innerHTML=fech;
+	fecha.setSeconds(fecha.getSeconds()+1);
+	setTimeout("hora()",1000);
+}
+</script>

@@ -23,6 +23,12 @@ class Archivo extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return Archivo the static model class
 	 */
+	
+	public $descripcion;
+	public $medico;
+	public $servicio;
+	public $ubicacion;
+	
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
@@ -55,6 +61,10 @@ class Archivo extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, nombre, puerta, orden, idAudio, transcripto, transcriptoPor, texto, fecha, aux', 'safe', 'on'=>'search'),
+			array('medico', 'safe', 'on'=>'search'),
+			array('descripcion', 'safe', 'on'=>'search'),
+			array('ubicacion', 'safe', 'on'=>'search'),
+
 		);
 	}
 
@@ -67,6 +77,7 @@ class Archivo extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array('obj_ref' => array(self::BELONGS_TO, 'Audio', 'idAudio')
 		);
+		
 	}
 
 	/**
@@ -88,7 +99,7 @@ class Archivo extends CActiveRecord
 			'aux' => 'Aux',
 		);
 	}
-
+	
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
@@ -99,7 +110,17 @@ class Archivo extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
+		
+		$criteria->with = array('obj_ref'); 
+		$criteria->compare('obj_ref.descripcion',$this->descripcion,true);
+		$criteria->compare('obj_ref.ubicacion',$this->ubicacion,true);
+		
+		//$criteria->with = array('obj_ref', 'obj_ref.obj_med'); 
+		$criteria->compare('obj_med.nombre',$this->nombre,true);
+		
+		//$criteria->with = array('obj_ref', 'obj_ref.obj_ser'); 
+		$criteria->compare('obj_ser.nombre',$this->nombre,true);
+		
 		$criteria->compare('id',$this->id);
 		$criteria->compare('nombre',$this->nombre,true);
 		$criteria->compare('puerta',$this->puerta,true);
@@ -112,8 +133,14 @@ class Archivo extends CActiveRecord
 		$criteria->compare('tiempo',$this->tiempo,true);
 		$criteria->compare('aux',$this->aux,true);
 		
+		//$criteria->with = array('obj_ref', 'obj_ref.obj_med'); 
+		//$criteria->compare('obj_med.nombre',$this->nombre,true);
+		
+		//$criteria->with = array('obj_ref'); 
+		//$criteria->compare('obj_ref.descripcion',$this->descripcion,true);
+
 		$sort=new CSort();
-		$sort->defaultOrder='fecha DESC';
+		$sort->defaultOrder='t.fecha DESC';
 		
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

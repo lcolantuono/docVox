@@ -9,6 +9,7 @@
  * @property string $descripcion
  * @property string $fecha
  * @property integer $idservicios
+ * @property string $ubicacion
  * @property integer $idmedico
  * @property string $aux
  */
@@ -40,14 +41,17 @@ class Audio extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('audio, idservicios, idmedico', 'required'),
+			array('audio, idservicios, ubicacion, idmedico', 'required'),
 			array('idservicios, idmedico', 'numerical', 'integerOnly'=>true),
 			array('audio', 'length', 'max'=>100),
 			array('descripcion, aux', 'length', 'max'=>200),
+			array('ubicacion', 'length', 'max'=>30),
 			array('fecha', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('idaudio, audio, descripcion, fecha, idservicios, idmedico, aux', 'safe', 'on'=>'search'),
+			array('idaudio, audio, descripcion, fecha, idservicios, ubicacion, idmedico, aux', 'safe', 'on'=>'search'),
+			array('medico', 'safe', 'on'=>'search'),
+			array('servicio', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,7 +62,7 @@ class Audio extends CActiveRecord
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
-		return array(
+		return array('obj_med' => array(self::BELONGS_TO, 'Medico', 'idmedico'),'obj_ser' => array(self::BELONGS_TO, 'Servicios', 'idservicios')
 		);
 	}
 
@@ -73,6 +77,7 @@ class Audio extends CActiveRecord
 			'descripcion' => 'Descripcion',
 			'fecha' => 'Fecha',
 			'idservicios' => 'Idservicios',
+			'ubicacion' => 'Ubicacion',
 			'idmedico' => 'Idmedico',
 			'aux' => 'Aux',
 		);
@@ -94,6 +99,7 @@ class Audio extends CActiveRecord
 		$criteria->compare('descripcion',$this->descripcion,true);
 		$criteria->compare('fecha',$this->fecha,true);
 		$criteria->compare('idservicios',$this->idservicios);
+		$criteria->compare('ubicacion',$this->ubicacion,true);
 		$criteria->compare('idmedico',$this->idmedico);
 		$criteria->compare('aux',$this->aux,true);
 

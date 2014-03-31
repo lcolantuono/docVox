@@ -63,7 +63,7 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?><br/>
+		Copyright &copy; <?php echo date('Y').' - DocVox 1.0beta'; ?><br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 

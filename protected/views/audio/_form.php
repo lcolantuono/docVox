@@ -40,6 +40,12 @@
 		<?php echo $form->dropDownList($model,'idservicios', CHtml::listData(Servicios::model()->findAll(),'idservicios','nombre'), array('empty'=>'Seleccionar..'));?>
 		<?php echo $form->error($model,'idservicios'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'ubicacion'); ?>
+		<?php echo $form->dropDownList($model,'ubicacion',array('Fundacion'=>'Fundacion','Imagenes'=>'Imagenes','Ados'=>'Ados','CMIC'=>'CMIC')); ?>
+		<?php echo $form->error($model,'ubicacion'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'M&eacute;dico'); ?>
@@ -47,9 +53,11 @@
 		<?php echo $form->error($model,'idmedico'); ?>
 	</div>
 	
+	<?php $nombreEquipo = php_uname('n'); ?>
+	
 	<div class="row">
 		<?php echo $form->labelEx($model,'aux'); ?>
-		<?php echo $form->textField($model,'aux',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->textField($model,'aux',array('size'=>60,'maxlength'=>200, 'value'=>$nombreEquipo, 'readonly'=>'true')); ?>
 		<?php echo $form->error($model,'aux'); ?>
 	</div>
 

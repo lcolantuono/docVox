@@ -24,6 +24,10 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('idservicios')); ?>:</b>
 	<?php echo CHtml::encode($data->idservicios); ?>
 	<br />
+	
+	<b><?php echo CHtml::encode($data->getAttributeLabel('ubicacion')); ?>:</b>
+	<?php echo CHtml::encode($data->ubicacion); ?>
+	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('idmedico')); ?>:</b>
 	<?php echo CHtml::encode($data->idmedico); ?>

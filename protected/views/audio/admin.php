@@ -48,6 +48,7 @@ $('.search-form form').submit(function(){
 		/*
 		'idmedico',
 		*/
+		'ubicacion',
 		'aux',
 		array(
 			'class'=>'CButtonColumn',

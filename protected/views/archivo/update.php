@@ -3,7 +3,7 @@
 		if (confirm("Seguro desea cerrar el audio?")){window.close();}
 	}
 </script> 
-<<script type="text/javascript">
+<script type="text/javascript">
 	function confirmForm(){
 		var estado = document.getElementById('Archivo_transcripto').value;
 		return confirm('Desea continuar con estado trancripto: '+estado+'?');

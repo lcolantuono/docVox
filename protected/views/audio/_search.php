@@ -35,6 +35,11 @@
 		<?php echo $form->label($model,'idservicios'); ?>
 		<?php echo $form->textField($model,'idservicios'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->label($model,'ubicacion'); ?>
+		<?php echo $form->textField($model,'ubicacion',array('size'=>30,'maxlength'=>30)); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'idmedico'); ?>

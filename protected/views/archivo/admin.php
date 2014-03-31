@@ -37,7 +37,30 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 -->
 </p>
 
-<?php echo CHtml::link('B&uacute;squeda Avanzada','#',array('class'=>'search-button')); ?>
+<?php 
+// FUNCIONES PARA RECUPERAR NOMBRE DE MEDICOS Y DE SERVICIOS
+function nombreMed($id){
+	$medico = Yii::app()->db->createCommand()
+		     ->select('medico.nombre')
+		     ->from('medico')
+		     ->where('idmedico='.$id)
+		     ->queryRow();
+		$med = $medico['nombre'];
+	return $med;
+}
+
+function nombreSer($id){
+	$servicio = Yii::app()->db->createCommand()
+		     ->select('servicios.nombre')
+		     ->from('servicios')
+		     ->where('idservicios='.$id)
+		     ->queryRow();
+		$ser = $servicio['nombre'];
+	return $ser;
+}
+// ***************    FIN FUNCIONES    ****************** //
+
+echo CHtml::link('B&uacute;squeda Avanzada','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php 
 $this->renderPartial('_search',array(
@@ -51,6 +74,7 @@ $popUp = "window.open(this.href, 'Informe popUp',
 			'left=20,top=20,width=700,height=800px,toolbar=0,resizable=0'); return false;";
 
 $itemFilter = array(/*''=>'Todos', */'SI'=>'SI', 'NO'=>'NO');
+$itemFilter = array(/*''=>'Todos', */'Fundacion'=>'Fundacion', 'Imagenes'=>'Imagenes','Ados'=>'Ados', 'CMIC'=>'CMIC');
 
 $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'archivo-grid',
@@ -62,11 +86,11 @@ $this->widget('zii.widgets.grid.CGridView', array(
 		//'nombre',
 		array(
 			'name'=>'puerta',
-			'htmlOptions'=>array('width'=>'100px')
+			'htmlOptions'=>array('width'=>'5%')
 		),
 		array(
 			'name'=>'orden',
-			'htmlOptions'=>array('width'=>'100px')
+			'htmlOptions'=>array('width'=>'5%')
 		),
 		array(
 	        'name'  => 'nombre',
@@ -74,10 +98,26 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	        'type'  => 'raw',
 			'htmlOptions'=>array('width'=>'300px')
     	),
-         array('name'=>'id', 
-                    'header'=>'descripcion',
+         array('name'=>'descripcion', 
+                    'header'=>'Descripcion',
                     'value'=>'substr($data->obj_ref->descripcion,0,15)'
          ),
+         array('name'=>'medico', 
+                    'header'=>'Servicio',
+                    'value'=>'nombreSer($data->obj_ref->idservicios)',
+                    'filter'=>false
+         ),
+         array('name'=>'servicio', 
+                    'header'=>'Medico',
+                    'value'=>'nombreMed($data->obj_ref->idmedico)',
+                    'filter'=>false
+         ),
+         array('name'=>'ubicacion', 
+                    'header'=>'Ubicacion',
+                    'value'=>'$data->obj_ref->ubicacion',
+                    'filter' => $itemFilter,
+         ),
+         
 		//'idAudio',
 		 array(
             'name' => 'transcripto',
@@ -91,12 +131,12 @@ $this->widget('zii.widgets.grid.CGridView', array(
 			'htmlOptions'=>array('width'=>'140')
 		),
 		//'tiempo',
-		'aux',
-		 array(
+		//'aux',
+		/* array(
 		    'class'=>'CButtonColumn',
 		    'template'=>'{update}{view}{delete}',
 		 	'visible'=>Yii::app()->user->checkAccess("admin")
-		 ),
+		 ),*/
 		 
 	),
 ));
