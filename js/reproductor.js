@@ -3,6 +3,10 @@
  * sitio web: www.lewebmonster.com
  */
 
+
+
+
+
 $(function(){
 	//creamos un objeto Audio de HTML5 para reproducir archivos
 	var objReproductor=new Audio();
@@ -160,6 +164,13 @@ $(function(){
 	//Retroceso de un segundo
 	$('#Retroceso').on('click',function(){
 		objReproductor.currentTime-=1;
+	})
+	
+	//Modificar la barra de progreso
+	$('#range').on('change', function() {
+		$('#range').attr({'max': objReproductor.duration});
+		//alert($('#range').value)
+		objReproductor.currentTime=$('#range').val()
 	})
 	
 	//evento que se dispara al finalizar la reproduccion

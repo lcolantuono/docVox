@@ -74,11 +74,12 @@ $popUp = "window.open(this.href, 'Informe popUp',
 			'left=20,top=20,width=700,height=800px,toolbar=0,resizable=0'); return false;";
 
 $itemFilter = array(/*''=>'Todos', */'SI'=>'SI', 'NO'=>'NO');
-$itemFilter = array(/*''=>'Todos', */'Fundacion'=>'Fundacion', 'Imagenes'=>'Imagenes','Ados'=>'Ados', 'CMIC'=>'CMIC');
+$itemFilter2 = array(/*''=>'Todos', */'Fundacion'=>'Fundacion', 'Imagenes'=>'Imagenes','Ados'=>'Ados', 'CMIC'=>'CMIC');
 
 $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'archivo-grid',
 	'dataProvider'=>$model->search(),
+	'afterAjaxUpdate' => 'reinstallDatePicker', // (#1)
 	'filter'=>$model,
 	'htmlOptions'=>array('style'=>'word-wrap:break-word; width:1050px;'),
 	'columns'=>array(
@@ -98,24 +99,19 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	        'type'  => 'raw',
 			'htmlOptions'=>array('width'=>'300px')
     	),
-         array('name'=>'descripcion', 
-                    'header'=>'Descripcion',
-                    'value'=>'substr($data->obj_ref->descripcion,0,15)'
+    	array('name'=>'nombre', 
+                    'header'=>'Nombre',
+                    'value'=>'substr($data->obj_ref->audio,0,15)'
          ),
-         array('name'=>'medico', 
-                    'header'=>'Servicio',
-                    'value'=>'nombreSer($data->obj_ref->idservicios)',
-                    'filter'=>false
-         ),
-         array('name'=>'servicio', 
-                    'header'=>'Medico',
-                    'value'=>'nombreMed($data->obj_ref->idmedico)',
-                    'filter'=>false
-         ),
+        array('name'=>'descripcion', 
+                   'header'=>'Descripcion',
+                   'value'=>'substr($data->obj_ref->descripcion,0,15)'
+        ),
+         
          array('name'=>'ubicacion', 
                     'header'=>'Ubicacion',
                     'value'=>'$data->obj_ref->ubicacion',
-                    'filter' => $itemFilter,
+                    'filter' => $itemFilter2,
          ),
          
 		//'idAudio',
@@ -128,7 +124,31 @@ $this->widget('zii.widgets.grid.CGridView', array(
 		//'texto',
 		array(
 			'name'=>'fecha',
-			'htmlOptions'=>array('width'=>'140')
+			'htmlOptions'=>array('width'=>'140'),
+			'filter' => $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                'model'=>$model, 
+                'attribute'=>'fecha', 
+                'language' => 'es',
+				'options'=>array(        
+			        'showButtonPanel'=>true,
+			        'dateFormat'=>'yy-mm-dd',//Date format 'mm/dd/yy','yy-mm-dd','d M, y','d MM, y','DD, d MM, yy'
+			    ),
+                // 'i18nScriptFile' => 'jquery.ui.datepicker-ja.js', (#2)
+                'htmlOptions' => array(
+                    'id' => 'datepicker_for_fecha',
+                    'size' => '10',
+                ),
+                'defaultOptions' => array(  // (#3)
+                    'showOn' => 'focus', 
+                    'dateFormat' => 'yy-mm-dd',
+                    'showOtherMonths' => true,
+                    'selectOtherMonths' => true,
+                    'changeMonth' => true,
+                    'changeYear' => true,
+                    'showButtonPanel' => true,
+                )
+            ), 
+            true), // (#4)
 		),
 		//'tiempo',
 		//'aux',
@@ -137,9 +157,29 @@ $this->widget('zii.widgets.grid.CGridView', array(
 		    'template'=>'{update}{view}{delete}',
 		 	'visible'=>Yii::app()->user->checkAccess("admin")
 		 ),*/
+		
+		array('name'=>'servicio', 
+                    'header'=>'Servicio',
+                    'value'=>'nombreSer($data->obj_ref->idservicios)',
+                    'filter'=>false
+         ),
+         array('name'=>'medico', 
+                    'header'=>'Medico',
+                    'value'=>'nombreMed($data->obj_ref->idmedico)',
+                    'filter'=>false
+         ),
 		 
 	),
 ));
+
+
+// (#5)
+Yii::app()->clientScript->registerScript('re-install-date-picker', "
+function reinstallDatePicker(id, data) {
+        //use the same parameters that you had set in your widget else the datepicker will be refreshed by default
+    $('#datepicker_for_fecha').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ja'],{'dateFormat':'yy-mm-dd'}));
+}
+");
 ?>
 
 <?php

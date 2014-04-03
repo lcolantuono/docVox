@@ -60,10 +60,7 @@ class Archivo extends CActiveRecord
 			array('texto', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, nombre, puerta, orden, idAudio, transcripto, transcriptoPor, texto, fecha, aux', 'safe', 'on'=>'search'),
-			array('medico', 'safe', 'on'=>'search'),
-			array('descripcion', 'safe', 'on'=>'search'),
-			array('ubicacion', 'safe', 'on'=>'search'),
+			array('descripcion, ubicacion, id, nombre, puerta, orden, idAudio, transcripto, transcriptoPor, texto, fecha, aux', 'safe', 'on'=>'search'),
 
 		);
 	}
@@ -116,10 +113,10 @@ class Archivo extends CActiveRecord
 		$criteria->compare('obj_ref.ubicacion',$this->ubicacion,true);
 		
 		//$criteria->with = array('obj_ref', 'obj_ref.obj_med'); 
-		$criteria->compare('obj_med.nombre',$this->nombre,true);
+		//$criteria->compare('obj_med.nombre',$this->nombre,true);
 		
 		//$criteria->with = array('obj_ref', 'obj_ref.obj_ser'); 
-		$criteria->compare('obj_ser.nombre',$this->nombre,true);
+		//$criteria->compare('obj_ser.nombre',$this->nombre,true);
 		
 		$criteria->compare('id',$this->id);
 		$criteria->compare('nombre',$this->nombre,true);
@@ -129,7 +126,7 @@ class Archivo extends CActiveRecord
 		$criteria->compare('transcripto',$this->transcripto,true);
 		$criteria->compare('transcriptoPor',$this->transcriptoPor,true);
 		$criteria->compare('texto',$this->texto,true);
-		$criteria->compare('fecha',$this->fecha,true);
+		$criteria->compare('t.fecha',$this->fecha,true);
 		$criteria->compare('tiempo',$this->tiempo,true);
 		$criteria->compare('aux',$this->aux,true);
 		
