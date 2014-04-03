@@ -25,6 +25,7 @@ class Archivo extends CActiveRecord
 	 */
 	
 	public $descripcion;
+	public $audio;
 	public $medico;
 	public $servicio;
 	public $ubicacion;
@@ -60,7 +61,7 @@ class Archivo extends CActiveRecord
 			array('texto', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('descripcion, ubicacion, id, nombre, puerta, orden, idAudio, transcripto, transcriptoPor, texto, fecha, aux', 'safe', 'on'=>'search'),
+			array('descripcion, audio, ubicacion, id, nombre, puerta, orden, idAudio, transcripto, transcriptoPor, texto, fecha, aux', 'safe', 'on'=>'search'),
 
 		);
 	}
@@ -109,6 +110,7 @@ class Archivo extends CActiveRecord
 		$criteria=new CDbCriteria;
 		
 		$criteria->with = array('obj_ref'); 
+		$criteria->compare('obj_ref.audio',$this->audio,true);
 		$criteria->compare('obj_ref.descripcion',$this->descripcion,true);
 		$criteria->compare('obj_ref.ubicacion',$this->ubicacion,true);
 		

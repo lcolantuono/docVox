@@ -90,7 +90,7 @@ $tieneArchivo = Yii::app()->db->createCommand()
 						<input type="button" id="btnRepetir" title="Repetir la lista al finalizar">			
 					</div>
 					<div id="divProgreso">
-						<div id="divBarra"></div>
+						<div id="divBarra"><input id="range" type="range" style="width: 586px; height:100px;" min="0" max="100" value="0"></div>
 					</div>
 					<div id="divLista">
 						<ol id="olCanciones">

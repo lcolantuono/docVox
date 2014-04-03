@@ -99,9 +99,9 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	        'type'  => 'raw',
 			'htmlOptions'=>array('width'=>'300px')
     	),
-    	array('name'=>'nombre', 
+    	array('name'=>'audio', 
                     'header'=>'Nombre',
-                    'value'=>'substr($data->obj_ref->audio,0,15)'
+                    'value'=>'substr($data->obj_ref->audio,0,20)'
          ),
         array('name'=>'descripcion', 
                    'header'=>'Descripcion',
