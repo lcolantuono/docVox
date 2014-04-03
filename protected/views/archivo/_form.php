@@ -5,18 +5,10 @@
 ?>
 <script type="text/javascript">
 $(document).ready(function(){
-	$('#li').click(function(){
+	$('#divContenedor').click(function(){
 		cronometro();
 	});
 });
-</script>
-
-<script type="text/javascript">
-<!--
-function changeTime(change){
-	
-}
-//-->
 </script>
 
 <script language="JavaScript">

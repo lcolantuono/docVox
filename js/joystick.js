@@ -91,7 +91,8 @@
 							
 					        sheep.draw();
 					       
-					        setTimeout("loop()", INTERVAL);
+					        //setTimeout("loop()", INTERVAL);
+					        setTimeout("loop()", 200);
 					}
 
 /**
