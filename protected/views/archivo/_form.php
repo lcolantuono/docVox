@@ -93,7 +93,7 @@ $(document).ready(function(){
 							<label id="lblEstado"><strong>Transcurrido: </strong><span>-</span></label>
 						</div>
 						<div style="clear: both"></div>
-					</div>
+					</div>			    
 					<div id="divControles">
 						<input type="button" id="btnReproducir" title="Reproducir">
 						<input type="button" id="btnPausar" title="Pausar/Continuar">
@@ -222,6 +222,7 @@ $(document).ready(function(){
 	</div>
 
 <?php $this->endWidget(); ?>
+
 <script type="text/javascript">
     function select_all(obj) {
         var text_val=eval(obj);
@@ -239,6 +240,17 @@ $("#link").click(function(){
   Copied = holdtext.createTextRange();
   Copied.execCommand("Copy");
 });
+</script>
+
+<script type="text/javascript">
+	$(document).keydown(function(tecla){
+		if (tecla.keyCode == 39) {
+			$('#Avance').click();
+		}
+		if(tecla.keyCode == 37) {
+			$('#Retroceso').click();
+		}
+	});
 </script>
 
 </div><!-- form -->

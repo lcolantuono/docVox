@@ -2,6 +2,18 @@
 /* @var $this ArchivoController */
 /* @var $model Archivo */
 
+// Cerrar la venta si viene del update, osea de transcribir el informe
+$urlAnterior = $_SERVER['HTTP_REFERER'];
+
+if (strpos($urlAnterior, 'archivo/update')){
+	?><script type="text/javascript">
+		window.close();
+	</script>
+	<?php
+}
+//  ******************------------------------*********************  //
+
+
 $this->setPageTitle('docVox - Ver Informe');
 
 $this->breadcrumbs=array(
